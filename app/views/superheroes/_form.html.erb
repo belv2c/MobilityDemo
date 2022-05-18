@@ -22,6 +22,19 @@
       <%= form.text_area description %>
     </div>
 
+
+    <div class="field">
+      <% nemesis_ = "nemesis_#{Mobility.normalize_locale(locale)}" %>
+      <%= form.label nemesis_ %>
+      <%= form.text_area nemesis_ %>
+    </div>
+
+    <div class="field">
+      <% gadget_ = "gadget_#{Mobility.normalize_locale(locale)}" %>
+      <%= form.label gadget_ %>
+      <%= form.text_area gadget_ %>
+    </div>
+
     <hr>
   <% end %>
 

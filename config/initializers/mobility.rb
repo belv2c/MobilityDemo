@@ -9,7 +9,8 @@ Mobility.configure do
     # To default to a different backend globally, replace +:key_value+ by another
     # backend name.
     #
-    backend :key_value
+    # backend :key_value
+    backend :container
 
     # ActiveRecord
     #
@@ -65,7 +66,7 @@ Mobility.configure do
     # fallbacks
     #
     # Or uncomment this line to enable fallbacks with a global default.
-    # fallbacks { :pt => :en }
+    fallbacks { :pt => :en }
 
     # Presence
     #
@@ -99,10 +100,10 @@ Mobility.configure do
     # +I18n.available_locales+, but you can pass the set of locales with
     # +translates+ and/or set a global default here.
     #
-   locale_accessors
+    #locale_accessors
     #
     # Or define specific defaults by uncommenting line below
-    # locale_accessors [:en, :ja]
+     locale_accessors [:en, :ru]
 
     # Attribute Methods
     #
@@ -111,6 +112,6 @@ Mobility.configure do
     # with translated and untranslated attributes, respectively. Be aware that
     # this plugin can create conflicts with other gems.
     #
-    # attribute_methods
+     attribute_methods
   end
 end

@@ -1,5 +1,4 @@
 class Superhero < ApplicationRecord
   extend Mobility
-  translates :name, type: :string
-  translates :description, type: :text
+  translates :nemesis, :gadget, :name, :description
 end
